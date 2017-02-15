@@ -39,7 +39,7 @@ before_install:
   - 'node_modules/protractor/bin/webdriver-manager start 2>&1 &'
   - sleep 3
 before_script:
-  - snyk auth
+  - snyk auth 6fa2a9fa-72ec-4e72-b7d5-4e56cc2a0973
   - snyk test
 after_script:
   - nsp check
